@@ -16,7 +16,6 @@ class PlusButton: UIButton {
     @IBInspectable var plusHeight: CGFloat = 3.0
     
     override func drawRect(rect: CGRect) {
-        //default bounds is equal to 80x80
         let plusWidth: CGFloat = min(bounds.width, bounds.height) * 0.5
         let path = UIBezierPath(ovalInRect: rect)
         buttonBackgroundColor.setFill()

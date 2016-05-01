@@ -62,7 +62,6 @@ class MainViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        //after placing constraints
         background.clipsToBounds = true
         background.alpha = 0.7
         background.layer.cornerRadius = background.bounds.width / 2
