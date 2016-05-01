@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5049FA51CD28EBB004EEB63 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5049FA41CD28EBB004EEB63 /* Recipe.swift */; };
+		E5049FA91CD2AC2A004EEB63 /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5049FA81CD2AC2A004EEB63 /* RecipesTableViewController.swift */; };
+		E5049FAD1CD2ADF6004EEB63 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5049FAC1CD2ADF6004EEB63 /* RecipeTableViewCell.swift */; };
+		E5049FB11CD2C313004EEB63 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = E5049FB01CD2C313004EEB63 /* data.json */; };
+		E5049FB61CD37559004EEB63 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5049FB51CD37559004EEB63 /* RecipeDetailViewController.swift */; };
+		E52D83F31CD12E140071D7AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D83F21CD12E140071D7AD /* AppDelegate.swift */; };
+		E52D83F51CD12E140071D7AD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D83F41CD12E140071D7AD /* MainViewController.swift */; };
+		E52D83F81CD12E140071D7AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52D83F61CD12E140071D7AD /* Main.storyboard */; };
+		E52D83FA1CD12E140071D7AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52D83F91CD12E140071D7AD /* Assets.xcassets */; };
+		E52D83FD1CD12E140071D7AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52D83FB1CD12E140071D7AD /* LaunchScreen.storyboard */; };
+		E52D84081CD12E140071D7AD /* MoodUpLabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D84071CD12E140071D7AD /* MoodUpLabsTests.swift */; };
+		E52D84131CD12E140071D7AD /* MoodUpLabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D84121CD12E140071D7AD /* MoodUpLabsUITests.swift */; };
+		E52D84211CD12F700071D7AD /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D84201CD12F700071D7AD /* PlusButton.swift */; };
+		E5F33DC91CD3B844007407FA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F33DC81CD3B844007407FA /* FBSDKCoreKit.framework */; };
+		E5F33DCB1CD3B84C007407FA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F33DCA1CD3B84C007407FA /* FBSDKLoginKit.framework */; };
+		E5F33DCD1CD3B858007407FA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F33DCC1CD3B858007407FA /* FBSDKShareKit.framework */; };
+		E5F33DDE1CD510E2007407FA /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F33DDD1CD510E2007407FA /* FacebookViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E52D84041CD12E140071D7AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E52D83E71CD12E140071D7AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E52D83EE1CD12E140071D7AD;
+			remoteInfo = MoodUpLabs;
+		};
+		E52D840F1CD12E140071D7AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E52D83E71CD12E140071D7AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E52D83EE1CD12E140071D7AD;
+			remoteInfo = MoodUpLabs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E5049FA41CD28EBB004EEB63 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		E5049FA81CD2AC2A004EEB63 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
+		E5049FAC1CD2ADF6004EEB63 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeTableViewCell.swift; path = ../RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		E5049FB01CD2C313004EEB63 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		E5049FB51CD37559004EEB63 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		E52D83EF1CD12E140071D7AD /* MoodUpLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodUpLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52D83F21CD12E140071D7AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E52D83F41CD12E140071D7AD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E52D83F71CD12E140071D7AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E52D83F91CD12E140071D7AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E52D83FC1CD12E140071D7AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E52D83FE1CD12E140071D7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52D84031CD12E140071D7AD /* MoodUpLabsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodUpLabsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52D84071CD12E140071D7AD /* MoodUpLabsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodUpLabsTests.swift; sourceTree = "<group>"; };
+		E52D84091CD12E140071D7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52D840E1CD12E140071D7AD /* MoodUpLabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodUpLabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52D84121CD12E140071D7AD /* MoodUpLabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodUpLabsUITests.swift; sourceTree = "<group>"; };
+		E52D84141CD12E140071D7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52D84201CD12F700071D7AD /* PlusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
+		E5F33DC81CD3B844007407FA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		E5F33DCA1CD3B84C007407FA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		E5F33DCC1CD3B858007407FA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		E5F33DCE1CD3BAED007407FA /* MoodUpLabs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoodUpLabs-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5F33DDD1CD510E2007407FA /* FacebookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E52D83EC1CD12E140071D7AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F33DCB1CD3B84C007407FA /* FBSDKLoginKit.framework in Frameworks */,
+				E5F33DC91CD3B844007407FA /* FBSDKCoreKit.framework in Frameworks */,
+				E5F33DCD1CD3B858007407FA /* FBSDKShareKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52D84001CD12E140071D7AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52D840B1CD12E140071D7AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E52D83E61CD12E140071D7AD = {
+			isa = PBXGroup;
+			children = (
+				E5F33DCC1CD3B858007407FA /* FBSDKShareKit.framework */,
+				E5F33DCA1CD3B84C007407FA /* FBSDKLoginKit.framework */,
+				E5F33DC81CD3B844007407FA /* FBSDKCoreKit.framework */,
+				E52D83F11CD12E140071D7AD /* MoodUpLabs */,
+				E52D84061CD12E140071D7AD /* MoodUpLabsTests */,
+				E52D84111CD12E140071D7AD /* MoodUpLabsUITests */,
+				E52D83F01CD12E140071D7AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E52D83F01CD12E140071D7AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E52D83EF1CD12E140071D7AD /* MoodUpLabs.app */,
+				E52D84031CD12E140071D7AD /* MoodUpLabsTests.xctest */,
+				E52D840E1CD12E140071D7AD /* MoodUpLabsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E52D83F11CD12E140071D7AD /* MoodUpLabs */ = {
+			isa = PBXGroup;
+			children = (
+				E5049FAC1CD2ADF6004EEB63 /* RecipeTableViewCell.swift */,
+				E52D83F21CD12E140071D7AD /* AppDelegate.swift */,
+				E52D83F41CD12E140071D7AD /* MainViewController.swift */,
+				E52D83F61CD12E140071D7AD /* Main.storyboard */,
+				E52D83F91CD12E140071D7AD /* Assets.xcassets */,
+				E52D83FB1CD12E140071D7AD /* LaunchScreen.storyboard */,
+				E52D83FE1CD12E140071D7AD /* Info.plist */,
+				E52D84201CD12F700071D7AD /* PlusButton.swift */,
+				E5049FA41CD28EBB004EEB63 /* Recipe.swift */,
+				E5049FA81CD2AC2A004EEB63 /* RecipesTableViewController.swift */,
+				E5049FB01CD2C313004EEB63 /* data.json */,
+				E5049FB51CD37559004EEB63 /* RecipeDetailViewController.swift */,
+				E5F33DCE1CD3BAED007407FA /* MoodUpLabs-Bridging-Header.h */,
+				E5F33DDD1CD510E2007407FA /* FacebookViewController.swift */,
+			);
+			path = MoodUpLabs;
+			sourceTree = "<group>";
+		};
+		E52D84061CD12E140071D7AD /* MoodUpLabsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E52D84071CD12E140071D7AD /* MoodUpLabsTests.swift */,
+				E52D84091CD12E140071D7AD /* Info.plist */,
+			);
+			path = MoodUpLabsTests;
+			sourceTree = "<group>";
+		};
+		E52D84111CD12E140071D7AD /* MoodUpLabsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E52D84121CD12E140071D7AD /* MoodUpLabsUITests.swift */,
+				E52D84141CD12E140071D7AD /* Info.plist */,
+			);
+			path = MoodUpLabsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E52D83EE1CD12E140071D7AD /* MoodUpLabs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E52D84171CD12E140071D7AD /* Build configuration list for PBXNativeTarget "MoodUpLabs" */;
+			buildPhases = (
+				E52D83EB1CD12E140071D7AD /* Sources */,
+				E52D83EC1CD12E140071D7AD /* Frameworks */,
+				E52D83ED1CD12E140071D7AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoodUpLabs;
+			productName = MoodUpLabs;
+			productReference = E52D83EF1CD12E140071D7AD /* MoodUpLabs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E52D84021CD12E140071D7AD /* MoodUpLabsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E52D841A1CD12E140071D7AD /* Build configuration list for PBXNativeTarget "MoodUpLabsTests" */;
+			buildPhases = (
+				E52D83FF1CD12E140071D7AD /* Sources */,
+				E52D84001CD12E140071D7AD /* Frameworks */,
+				E52D84011CD12E140071D7AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E52D84051CD12E140071D7AD /* PBXTargetDependency */,
+			);
+			name = MoodUpLabsTests;
+			productName = MoodUpLabsTests;
+			productReference = E52D84031CD12E140071D7AD /* MoodUpLabsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E52D840D1CD12E140071D7AD /* MoodUpLabsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E52D841D1CD12E140071D7AD /* Build configuration list for PBXNativeTarget "MoodUpLabsUITests" */;
+			buildPhases = (
+				E52D840A1CD12E140071D7AD /* Sources */,
+				E52D840B1CD12E140071D7AD /* Frameworks */,
+				E52D840C1CD12E140071D7AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E52D84101CD12E140071D7AD /* PBXTargetDependency */,
+			);
+			name = MoodUpLabsUITests;
+			productName = MoodUpLabsUITests;
+			productReference = E52D840E1CD12E140071D7AD /* MoodUpLabsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E52D83E71CD12E140071D7AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Pawel Szudrowicz";
+				TargetAttributes = {
+					E52D83EE1CD12E140071D7AD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E52D84021CD12E140071D7AD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E52D83EE1CD12E140071D7AD;
+					};
+					E52D840D1CD12E140071D7AD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E52D83EE1CD12E140071D7AD;
+					};
+				};
+			};
+			buildConfigurationList = E52D83EA1CD12E140071D7AD /* Build configuration list for PBXProject "MoodUpLabs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E52D83E61CD12E140071D7AD;
+			productRefGroup = E52D83F01CD12E140071D7AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E52D83EE1CD12E140071D7AD /* MoodUpLabs */,
+				E52D84021CD12E140071D7AD /* MoodUpLabsTests */,
+				E52D840D1CD12E140071D7AD /* MoodUpLabsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E52D83ED1CD12E140071D7AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52D83FD1CD12E140071D7AD /* LaunchScreen.storyboard in Resources */,
+				E52D83FA1CD12E140071D7AD /* Assets.xcassets in Resources */,
+				E52D83F81CD12E140071D7AD /* Main.storyboard in Resources */,
+				E5049FB11CD2C313004EEB63 /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52D84011CD12E140071D7AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52D840C1CD12E140071D7AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E52D83EB1CD12E140071D7AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F33DDE1CD510E2007407FA /* FacebookViewController.swift in Sources */,
+				E52D83F51CD12E140071D7AD /* MainViewController.swift in Sources */,
+				E52D83F31CD12E140071D7AD /* AppDelegate.swift in Sources */,
+				E5049FB61CD37559004EEB63 /* RecipeDetailViewController.swift in Sources */,
+				E52D84211CD12F700071D7AD /* PlusButton.swift in Sources */,
+				E5049FAD1CD2ADF6004EEB63 /* RecipeTableViewCell.swift in Sources */,
+				E5049FA51CD28EBB004EEB63 /* Recipe.swift in Sources */,
+				E5049FA91CD2AC2A004EEB63 /* RecipesTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52D83FF1CD12E140071D7AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52D84081CD12E140071D7AD /* MoodUpLabsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52D840A1CD12E140071D7AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52D84131CD12E140071D7AD /* MoodUpLabsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E52D84051CD12E140071D7AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E52D83EE1CD12E140071D7AD /* MoodUpLabs */;
+			targetProxy = E52D84041CD12E140071D7AD /* PBXContainerItemProxy */;
+		};
+		E52D84101CD12E140071D7AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E52D83EE1CD12E140071D7AD /* MoodUpLabs */;
+			targetProxy = E52D840F1CD12E140071D7AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E52D83F61CD12E140071D7AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E52D83F71CD12E140071D7AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E52D83FB1CD12E140071D7AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E52D83FC1CD12E140071D7AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E52D84151CD12E140071D7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E52D84161CD12E140071D7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E52D84181CD12E140071D7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MoodUpLabs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pablo.MoodUpLabs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoodUpLabs/MoodUpLabs-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E52D84191CD12E140071D7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MoodUpLabs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pablo.MoodUpLabs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoodUpLabs/MoodUpLabs-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		E52D841B1CD12E140071D7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MoodUpLabsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pablo.MoodUpLabsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoodUpLabs.app/MoodUpLabs";
+			};
+			name = Debug;
+		};
+		E52D841C1CD12E140071D7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MoodUpLabsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pablo.MoodUpLabsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoodUpLabs.app/MoodUpLabs";
+			};
+			name = Release;
+		};
+		E52D841E1CD12E140071D7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MoodUpLabsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pablo.MoodUpLabsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MoodUpLabs;
+			};
+			name = Debug;
+		};
+		E52D841F1CD12E140071D7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MoodUpLabsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pablo.MoodUpLabsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MoodUpLabs;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E52D83EA1CD12E140071D7AD /* Build configuration list for PBXProject "MoodUpLabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52D84151CD12E140071D7AD /* Debug */,
+				E52D84161CD12E140071D7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E52D84171CD12E140071D7AD /* Build configuration list for PBXNativeTarget "MoodUpLabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52D84181CD12E140071D7AD /* Debug */,
+				E52D84191CD12E140071D7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E52D841A1CD12E140071D7AD /* Build configuration list for PBXNativeTarget "MoodUpLabsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52D841B1CD12E140071D7AD /* Debug */,
+				E52D841C1CD12E140071D7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E52D841D1CD12E140071D7AD /* Build configuration list for PBXNativeTarget "MoodUpLabsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52D841E1CD12E140071D7AD /* Debug */,
+				E52D841F1CD12E140071D7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E52D83E71CD12E140071D7AD /* Project object */;
+}
