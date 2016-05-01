@@ -158,13 +158,6 @@ class MainViewController: UIViewController, FBSDKLoginButtonDelegate {
             return
         }
         
-        /*let object = try! NSJSONSerialization.JSONObjectWithData(takeDataFormLocalStorage()!, options: .AllowFragments)
-        let r =  parseToRecipes(object)
-        let recipesTableViewController = self.storyboard!.instantiateViewControllerWithIdentifier("RecipesTable") as! RecipesTableViewController
-        recipesTableViewController.recipes = r
-        self.navigationController?.pushViewController(recipesTableViewController, animated: true)
-        */
-        
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         dataTask?.cancel()
         
@@ -276,12 +269,6 @@ class MainViewController: UIViewController, FBSDKLoginButtonDelegate {
             images.append(UIImage(data: data!)!)
         }
         return images
-    }
-    
-    private func takeDataFormLocalStorage() -> NSData? {
-        let url = NSBundle.mainBundle().URLForResource("data", withExtension: "json")!
-        let data = NSData(contentsOfURL: url)
-        return data
     }
     
     func viewFacebookProfile() {
